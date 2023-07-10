@@ -42,7 +42,7 @@ const ComingSoon = () => {
 								<div className='text-center mt-sm-5 pt-4 mb-4'>
 									<div className='mb-sm-5 pb-sm-4 pb-5'>
 										<img
-											src={'/static/images/comingsoon.png'}
+											src={'./static/images/comingsoon.png'}
 											alt=''
 											height='120'
 											className='move-animation'
