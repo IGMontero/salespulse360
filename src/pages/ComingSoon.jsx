@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Container, Input, InputGroup, Row } from 'reactstrap';
 // import Countdown from "react-countdown"
 
+
 //import images
 import comingsoon from '../assets/images/comingsoon.png';
 import ParticlesAuth from '../components/animations/Particles';
@@ -66,17 +67,23 @@ const ComingSoon = () => {
 											</p>
 										</div>
 
-										<InputGroup className='countdown-input-group mx-auto my-4'>
-											<Input
-												type='email'
-												className='form-control border-light shadow'
-												placeholder='Enter your email address'
-											/>
-											<button className='btn btn-success' type='button'>
-												Send
-												<i className='ri-send-plane-2-fill align-bottom ms-2'></i>
-											</button>
-										</InputGroup>
+										<form
+											action='mailto:tristan@gsalespulse360.com'
+											method='post'
+											encType='text/plain'>
+											<InputGroup className='countdown-input-group mx-auto my-4'>
+												<Input
+													type='email'
+													name='email'
+													className='form-control border-light shadow'
+													placeholder='Enter your email address'
+												/>
+												<button className='btn btn-success' type='submit' value="Send">
+													Send
+													<i className='ri-send-plane-2-fill align-bottom ms-2'></i>
+												</button>
+											</InputGroup>
+										</form>
 									</div>
 								</div>
 							</Col>
